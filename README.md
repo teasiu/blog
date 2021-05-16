@@ -36,4 +36,10 @@ curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 ```
 
-
+# install
+```
+npm install
+npm install hexo-feed --save-dev
+npm install hexo-asset --save
+npm install hexo-generator-json-content --save
+```

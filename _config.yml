@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: slitaz中文定制
+subtitle: 'slitaz定制教程'
+description: 'slitaz定制教程'
+keywords: slitaz
+author: teasiu
 language: zh-cn
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.slitaz.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -125,3 +125,13 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+    
+feed:
+    limit: 20
+    order_by: "-date"
+    tag_dir: "tag"
+    category_dir: "category"
+    atom:
+        enable: true
+        template: "themes/yilia/layout/atom.ejs"
+        output: "atom.xml"

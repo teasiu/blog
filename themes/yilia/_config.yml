@@ -2,7 +2,7 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  订阅: /atom.xml
 
 # SubNav
 subnav:
@@ -68,7 +68,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: '/themes/yilia/slitaz.png'
+avatar: '/img/slitaz.png'
 
 #是否开启分享
 share_jia: true
