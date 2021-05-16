@@ -6,9 +6,9 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
+  github: "https://github.com/teasiu/slitaz5cn"
   weibo: "#"
-  rss: "#"
+  rss: "/rss.xml"
   zhihu: "#"
   #qq: "#"
   #weixin: "#"
@@ -23,7 +23,7 @@ subnav:
   #twitter: "#"
   #linkedin: "#"
 
-rss: /atom.xml
+rss: /rss.xml
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
