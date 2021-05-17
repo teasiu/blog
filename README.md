@@ -39,7 +39,15 @@ apt-get install -y nodejs
 # install
 ```
 npm install
+hexo init blog
+cd blog
 npm install hexo-feed --save-dev
 npm install hexo-asset --save
 npm install hexo-generator-json-content --save
+```
+# post new 
+```
+hexo new "xxx"
+hexo g
+hexo s
 ```
