@@ -51,3 +51,15 @@ hexo new "xxx"
 hexo g
 hexo s
 ```
+# top
+```
+npm uninstall hexo-generator-index --save
+npm install hexo-generator-index-pin-top --save
+-----------
+---
+title: Hexo
+categories: 
+tags:
+top: 10
+---
+```
