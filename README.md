@@ -44,6 +44,7 @@ cd blog
 npm install hexo-feed --save-dev
 npm install hexo-asset --save
 npm install hexo-generator-json-content --save
+npm install hexo-generator-sitemap --save
 ```
 # post new 
 ```
