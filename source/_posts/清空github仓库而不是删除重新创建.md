@@ -14,6 +14,7 @@ git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
 git push -u --force origin master
 ```
 如果是main的branch
+<!-- more -->
 ```
 rm -rf .git
 git init

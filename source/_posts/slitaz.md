@@ -20,6 +20,7 @@ sudo apt update && sudo apt install p7zip-full genisoimage curl git bash
 一键安装docker
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
+<!-- more -->
 然后
 ```
 git clone https://github.com/teasiu/slitaz5cn.git

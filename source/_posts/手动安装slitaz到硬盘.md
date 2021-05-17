@@ -17,6 +17,7 @@ mkdir /mnt/target
 mount /dev/sda1 /mnt/target
 ```
 # 3.准备下载一个iso格式的镜像文档
+<!-- more -->
 中文版永久下载地址（每周更新）
 https://github.com/teasiu/slitaz5cn/releases/latest
 取出iso里面的内核文件bzImage和系统文件rootfs.gz，并拷贝到挂载的目标硬盘分区
