@@ -67,3 +67,7 @@ top: 10
 ## onekey deploy to heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/teasiu/blog/tree/main)
+
+## onekey deploy to Hexo project with Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=hhttps://github.com/teasiu/blog/tree/main)
