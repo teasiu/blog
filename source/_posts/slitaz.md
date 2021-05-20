@@ -80,5 +80,5 @@ https://github.com/teasiu/slitaz5cn
 https://sourceforge.net/projects/slitaz/
 http://www.slitaz.cn:8083 （推荐）
 
-
+![](https://cdn.jsdelivr.net/gh/teasiu/pic@master/2021/05/20/47194590.jpg)
 

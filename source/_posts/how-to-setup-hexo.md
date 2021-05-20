@@ -5,51 +5,35 @@ tags:
 ---
 
 我想写写怎么建个Hexo站。
-
 好吧好吧，我知道网上教程一抓一大把，可是我再写一个，有什么错吗？
-
 （其实我主要是想享受一下Hexo的代码编辑高亮，WordPress的高亮令人作呕）
-
 <!-- more -->
-
 好吧，正文开始。
 注：本文使用Windows 10作为演示系统，其他系统或版本操作相仿。
-
 ## 在本地开始
-
 先新建一个文件夹，爱建哪儿就~~别~~建哪儿。
-
 OK了？现在，我建议你去[下载Git](http://git-scm.com/downloads)。因为用它部署Hexo超级方便。
-
 注意！在安装时，一定要把```在文件夹中Git Bash here```的选项打开，否则会有些难搞。如果实在忘了，那么请看[忘记设置GBH](#忘记设置GBH)。
-
 接下来，打开你的那个文件夹。右键空白，点击```Git Bash here```。然后，在新打开的黑色指令行中，先初始化Git。
 
 ```
 git init
 ```
-
 注意：<strong>Git Bash似乎不能直接</strong>```Ctrl+V```<strong>粘贴内容，你可以试试右键Git Bash窗口。</strong>
-
 然后，安装Hexo并初始化它。
-
 等等！由于Hexo需要用npm安装，然而因为某些奇奇怪怪的国内上网问题，npm超级慢。我们需要先配置个镜像。淘宝的镜像近来好像在维护，无法使用，那就用cnpm吧：
 
 ```
 npm config set registry http://r.cnpmjs.org/
 ```
-
 接下来再安装并初始化Hexo，就快多了：
-
 ```
 npm install -g hexo-cli
 hexo init
 ```
 <p class="note note-warning">
 如果文件夹不是空的，第二个指令输入后会报错。</p>
-
 这两个指令分别输入成功后，分别返回：
-
 ```
 + hexo-cli@X.X.X  //这X.X.X是版本号
 updated 1 package in XXXs  //这XXX是安装所耗费的秒数
