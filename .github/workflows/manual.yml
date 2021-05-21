@@ -20,7 +20,7 @@ jobs:
           echo "CURRENT_TAG=$CURRENT_TAG" >> ${GITHUB_ENV}
           if [ ${CURRENT_TAG} != ${LASTEST_TAG} ]
           then
-            wget -O ./source/hg255d-release https://github.com/teasiu/hg255d/releases/latest/download/release.md &&
+            wget -O ./source/hg255d-release https://github.com/teasiu/hg255d/releases/latest/download/release.md && \
             cat ./source/hg255d-release >> ./source/_posts/hg255d.md
           fi
 
