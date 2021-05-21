@@ -1,0 +1,39 @@
+name: Update hg255d-release.md
+
+on:
+    workflow_dispatch:
+#    schedule:
+#        - cron: '0 */24 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v2
+
+      - name: Update hg255d firmware Version
+        run: |
+          LASTEST_TAG="$( curl -fsSL "https://github.com/teasiu/hg255d/releases/latest/download/release.md" | md5sum | cut -d" " -f1 )"
+          echo "LASTEST_TAG=$LASTEST_TAG" >> ${GITHUB_ENV}
+          CURRENT_TAG="$( md5sum source/hg255d-release | cut -d" " -f1 )"
+          echo "CURRENT_TAG=$CURRENT_TAG" >> ${GITHUB_ENV}
+          if [ ${CURRENT_TAG} != ${LASTEST_TAG} ]
+          then
+            wget -O ./source/hg255d-release https://github.com/teasiu/hg255d/releases/latest/download/release.md
+            cat ./source/hg255d-release >> source/_posts/hg255d.md
+          fi
+
+      - name: Push
+        if: env.CURRENT_TAG != env.LASTEST_TAG && !cancelled()
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "Update hg255d dl link to latest version"
+          git push -v --progress
+          
+      - name: Delete workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 3
