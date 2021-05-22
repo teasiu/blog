@@ -102,10 +102,7 @@ theme: yilia
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github.com:teasiu/blog.git
-  branch: main
-  message: 'updated'
+  type: 
   
 jsonContent:
   meta: false
